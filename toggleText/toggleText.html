@@ -1,0 +1,10 @@
+<template>
+  <lightning-card>
+    <button class="slds-button slds-button_brand" onclick={clickHandler}>
+      Click the button to toggle the Text
+    </button>
+    <template if:true={showText}>
+      <h3>Hello, this is a demo of a toggler</h3>
+    </template>
+  </lightning-card>
+</template>

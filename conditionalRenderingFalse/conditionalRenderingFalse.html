@@ -1,0 +1,6 @@
+<template>
+    <button class="slds-button slds-button_brand" onclick={clickHandler}>Hide the text</button>
+    <template if:false={showText}>
+        <h3>Click the button to hide the text!</h3>
+    </template>
+</template>

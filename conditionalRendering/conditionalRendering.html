@@ -1,0 +1,6 @@
+<template>
+    <button class="slds-button slds-button_brand" onclick={clickHandler}>Show the text</button>
+    <template if:true={showText}>
+        <h3>This is the text that the button shows on click!</h3>
+    </template>
+</template>

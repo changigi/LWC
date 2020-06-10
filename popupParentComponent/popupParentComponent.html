@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Child to Parent Event" icon-name="custom:custom7"></lightning-card>
+    <lightning-card title="Simple Event" icon-name="custom:custom8">
+        <div class="slds-m-around_medium">
+            <button onclick={openHandler} class="slds-button slds-button_success">Open Child Component</button>
+        </div>
+        
+    </lightning-card>
+
+    <div if:true={openChildComponent}>
+        <c-popup-child-component heading="This is the Child Component"
+        msg="The heading and message was sent from the Parent to Child. When you click close, an event will be dispatched to the parent."
+        onclose={closeHandlerParent}>
+        </c-popup-child-component>
+    </div>
+    
+
+</template>
